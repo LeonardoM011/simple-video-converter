@@ -71,7 +71,7 @@ def main():
             continue
 
         # Converting file using ffmpeg (every item is seperated by space in normal bash command)
-        bashCommand = ["ffmpeg", "-i", str(sys.argv[1]), "-codec", "copy", filename + ".mp4"]
+        bashCommand = ["ffmpeg", "-i", str(sys.argv[i]), "-codec", "copy", filename + ".mp4"]
 
         # Checking if subprocess throws an error
         try:
